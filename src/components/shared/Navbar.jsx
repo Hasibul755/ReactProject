@@ -87,7 +87,11 @@ const Navbar = () => {
                 </li>
             </ul>
 
-            <button className="hidden md:block bg-white text-black px-4 py-1 rounded cursor-pointer hover:bg-green-500  "> Login </button>
+            <Link to={'/login'} >
+              <button className="hidden md:block bg-white text-black px-4 py-1 rounded cursor-pointer hover:bg-green-500  "> Login </button>
+            </Link>
+
+            
 
             {/* mobail menue colufs */}
             <div className={`md:hidden w-full absolute bg-green-500 top-full left-0 ${isOpen ? 'block' : 'hidden'}`}>
